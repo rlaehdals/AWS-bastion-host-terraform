@@ -33,7 +33,7 @@ vim ~/.ssh/config 입력하고 아래의 내용을 채워준다.
 Host EC2_ROOT
   HostName 255.255.255.255 (본인 ec2의 public IP)
   User ec2-user (aws linux의 경우 root가 ec2-user이다.)
-  IdentityFile {pwd}mykey (아까 위에서 ssh-keygen을 만들 때 사용한 경로를 입력한다.)
+  IdentityFile {pwd}/mykey (아까 위에서 ssh-keygen을 만들 때 사용한 경로를 입력한다.)
 ```
 
 이렇게하면 ssh EC2_ROOT를 입력하면 손쉽게 접근 가능하다.
